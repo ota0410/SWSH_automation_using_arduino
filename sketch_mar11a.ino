@@ -16,7 +16,7 @@ void setup() {
   SwitchControlLibrary().ReleaseButtonR();
   delay(500);
   // 斜め上入力しっぱなし リーグ集会の際にオンにする
-  // SwitchControlLibrary().MoveLeftStick(158,256); 
+  //SwitchControlLibrary().MoveLeftStick(158,256); 
 }
 
 // Home画面から設定を選択
@@ -25,25 +25,25 @@ void SelectSettings(){
   delay(50);
   SwitchControlLibrary().ReleaseButtonHome();
   delay(1000);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(100);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(100);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(100);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(100);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(100);
   SwitchControlLibrary().PressButtonA();
   delay(50);
@@ -53,42 +53,42 @@ void SelectSettings(){
 
 // 設定から日付変更を選択する関数
 void SelectDataSetting(){
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(2000);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
   SwitchControlLibrary().PressButtonA();
   delay(50);
   SwitchControlLibrary().ReleaseButtonA();
   delay(500);
   // 時間設定
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(4); // down
+  SwitchControlLibrary().MoveHat(DOWN);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
   SwitchControlLibrary().PressButtonA();
   delay(50);
@@ -98,17 +98,17 @@ void SelectDataSetting(){
 
 // 日付を1日進める
 void AdvanceOneDay(){
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(2); // right
+  SwitchControlLibrary().MoveHat(RIGHT);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(50);
-  SwitchControlLibrary().MoveHat(0); // up
+  SwitchControlLibrary().MoveHat(UP);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(200);
   SwitchControlLibrary().PressButtonA();
   delay(50);
@@ -172,9 +172,9 @@ void Revert2First(){
 
 // 日付を1年進める
 void AdvanceOneYear(){
-  SwitchControlLibrary().MoveHat(0); // up
+  SwitchControlLibrary().MoveHat(UP);
   delay(50);
-  SwitchControlLibrary().MoveHat(8); // center
+  SwitchControlLibrary().MoveHat(CENTER);
   delay(200);
   SwitchControlLibrary().PressButtonA();
   delay(50);
@@ -292,7 +292,7 @@ void RaidWattBugWhileMonth() {
   // レイドをやめる操作とレイドの再選択
   delay(1000);
   SwitchControlLibrary().MoveHat(DOWN);
-  delay(50);
+  delay(500);
   SwitchControlLibrary().MoveHat(CENTER);
   delay(500);
   SwitchControlLibrary().PressButtonA();
@@ -314,7 +314,7 @@ void RaidWattBugWhileMonth() {
   SwitchControlLibrary().PressButtonA();
   delay(50);
   SwitchControlLibrary().ReleaseButtonA();
-  delay(1000);
+  delay(6000);
 }
 
 void RaidWattPoints(){
@@ -352,7 +352,7 @@ void CirclingLeague(){
 }
 
 void loop() {
-  //RaidWattPoints();
+  RaidWattPoints();
   //CirclingLeague();
-  AquirePPup(); 
+  //AquirePPup(); 
 }
